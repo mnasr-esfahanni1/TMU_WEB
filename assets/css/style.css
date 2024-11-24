@@ -57,6 +57,11 @@ a, a:hover, a:visited, a:active {
 }
 
 /* ****************** Main ************* */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 #hero_image{
     width: 100vw;
     height: 65vh;
@@ -107,4 +112,30 @@ a, a:hover, a:visited, a:active {
 #Continuing_Education{
     background-image: url(../images/Continuing_Education.svg);
     background-size: 7vw;
+}
+#Link_Name{
+   
+}
+
+#Hero_Name{
+    width: 70vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 1;
+
+    
+}
+.linksOfName{
+    width: 30%;
+    height: 100%;
+    background-color:#FEDC01;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #004AAD;
+    font-size: 22px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
 }
