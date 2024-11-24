@@ -69,4 +69,6 @@ a, a:hover, a:visited, a:active {
 
 #header_Text{
     font-size: 64px;
+    margin: auto 40px;
+
 }
