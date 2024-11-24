@@ -66,3 +66,7 @@ a, a:hover, a:visited, a:active {
     background-repeat: no-repeat;
 
 }
+
+#header_Text{
+    font-size: 64px;
+}
