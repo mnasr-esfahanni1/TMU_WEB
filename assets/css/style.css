@@ -91,6 +91,20 @@ a, a:hover, a:visited, a:active {
     width: 30%;
     height: 100%;
     background-color: #004AAD;
-    opacity: 0.69;
+    opacity: 0.75;
+    background-repeat: no-repeat;
+    background-size: 10vw;
+    background-position: center;
+}
+#porgram{
+    background-image: url(../images/program.png);
 
+}
+#Inter_app{
+    background-image: url(../images/Inter_app.png);
+    background-size: 7vw;
+}
+#Continuing_Education{
+    background-image: url(../images/Continuing_Education.svg);
+    background-size: 7vw;
 }
