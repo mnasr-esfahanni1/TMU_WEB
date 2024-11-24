@@ -76,7 +76,7 @@ main{
 
 }
 
-#header_Text{
+#header_Text , #Footer_Text{
     font-size: 64px;
     padding-top: 20vh;
     text-align: center;
@@ -117,7 +117,7 @@ main{
 
 #Hero_Name{
     width: 70vw;
-    height: 5vh;
+    height: 6.5vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -136,4 +136,20 @@ main{
     font-size: 22px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
+}
+/* ************************ footer ********************** */
+footer{
+    width: 100vw;
+    height: 30vh;
+    background-image: url(../images/Footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+#Footer_Text{
+    padding-top: 10vh;
 }
