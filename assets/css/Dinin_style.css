@@ -1,5 +1,10 @@
 /* Add your CSS styles here */
 /* CSS */
+
+*{
+  font-family: "Roboto", sans-serif;
+ 
+}
 .location-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -68,7 +73,7 @@ h1{
   font-style: normal;
   font-size: 4em}
 
-  body{background: #ebebeb;}
+  /* body{background: #ebebeb;} */
 
   h2{
     padding: 15px;
@@ -126,10 +131,9 @@ h1{
   img{
     margin: 2em;
     width: 15em;
+    box-sizing: border-box;
   }
-{
-  box-sizing: border-box;
-}
+
 
 .column {
   float: left;
