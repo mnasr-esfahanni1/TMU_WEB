@@ -1,0 +1,326 @@
+/* Add your CSS styles here */
+/* CSS */
+.location-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.location-item {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.base-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: rgba(0, 0, 0, 0.8); /* Dark overlay background */
+}
+
+.location-item:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-content {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+}
+
+.overlay-content h5 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.overlay-content p {
+  font-size: 0.9em;
+  margin: 5px 0;
+  line-height: 1.4;
+}
+h1{
+  color: white;
+  background: #014d9b;
+  padding: 25px;
+  margin: auto;
+  text-align: center;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 4em}
+
+  body{background: #ebebeb;}
+
+  h2{
+    padding: 15px;
+    margin: auto;
+    text-align: left;
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2em;
+    clear: both;
+  }
+  h3{
+    background: #014d9b;
+    color: white;
+    padding: 15px;
+    margin: auto;
+    text-align: left;
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2em;
+    clear: both;
+  }
+  h4{
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2em;
+  }
+  h5{
+   font-family: "IBM Plex Sans Condensed", sans-serif;
+   font-weight: 500;
+   font-style: normal;
+   font-size: 2em;
+ }
+ .highlights{color: #3333ff;
+  background: #f2f2f2;
+  border: 12px;
+  padding: 15px;
+  margin: auto;
+  text-align: right;}
+
+  .highlighted {
+    background: #9494b8;
+    padding: 15px;
+    border: 2px solid red;
+    margin: auto;
+    text-align: left;
+    font-family: "Gowun Batang", serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 2em;
+  }
+
+  img{
+    margin: 2em;
+    width: 15em;
+  }
+{
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+  .hero-image {
+    width: 90%;
+    height: 500px;
+    overflow: hidden;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-top: 20px;
+  }
+
+  .grid-item {
+    overflow: hidden;
+  }
+
+  .grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+   /* Page layout container */
+  .page-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 400px; /* Adjust the 400px to your desired width */
+    gap: 2rem;
+  }
+
+  /* Main content area (for other content) */
+  .main-content {
+    /* Styles for your other content */
+  }
+
+  /* Right sidebar containing the sections */
+  .other-sections {
+    width: 100%;
+  }
+
+  /* Common styles for section content */
+  .section-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Left content styling */
+  .content-left {
+    flex: 1;
+    padding-right: 1rem;
+  }
+
+  /* Image container styling */
+  .content-right {
+    width: 150px; /* Reduced width for sidebar */
+    height: 100px; /* Reduced height for sidebar */
+    flex-shrink: 0;
+    position: relative;
+    cursor: pointer;
+  }
+
+  /* Image styling */
+  .content-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+
+  /* Image overlay container */
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  /* Hover effects */
+  .content-right:hover .image-overlay {
+    opacity: 1;
+  }
+
+  .content-right:hover img {
+    transform: scale(1.05);
+  }
+
+  /* Overlay content styling */
+  .overlay-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+  }
+
+  .overlay-text {
+    font-size: 0.875rem;
+  }
+
+  /* Heading styles */
+  h2 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 0.75rem;
+  }
+
+  /* Link styling */
+  .content-left a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #0066cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .content-left a:hover {
+    background-color: #0052a3;
+  }
+
+  /* Image link styling */
+  .content-right a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    height: 100%;
+  }
+
+  /* Responsive design */
+  @media (max-width: 1024px) {
+    .page-container {
+      grid-template-columns: 1fr 300px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .page-container {
+      grid-template-columns: 1fr;
+    }
+
+    .section-content {
+      flex-direction: row;
+      padding: 1rem;
+    }
+
+    .content-left {
+      padding-right: 1rem;
+    }
+
+    .content-right {
+      width: 120px;
+      height: 80px;
+    }
+  }
