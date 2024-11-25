@@ -1,0 +1,277 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Replica Std, sans-serif;
+  line-height: 1.5;
+  background-color: #f8f8f8;
+}
+
+header {
+  background-color:  #ffffff;
+  color: white;
+
+}
+
+.header-top {
+  display: flex;
+  
+  align-items: center;
+  padding: 0px 13px;
+}
+
+.logo {
+  width: 150px; /* Adjust logo size */
+  height: auto;
+  margin-right: 1px; /* Adds space between the logo and the search bar */
+}
+
+.search-bar {
+  padding: 5px 10px;
+  font-size: 14px;
+  
+  
+}
+
+.header-buttons button {
+  background-color: #D9D9D9;
+  border: none;
+  
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.apply { margin-left:60px;
+
+ }
+
+
+.mytoronto-link {
+  color: blue;
+  margin-left: 20px;
+  margin-right: 20px;
+
+
+ 
+}
+
+.banner{
+	background-color: #004C9B;
+	font color: white;
+	padding: 40px 30px;
+
+
+}
+
+.menu-icon {
+  font-size: 30px; /* Adjusts the size of the icon */
+  cursor: pointer; /* Makes the icon clickable */
+  display: inline-block;
+  color: black;
+}
+
+.nav-bar ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 5px 0;
+  background-color: #ffcc00;
+  font-weight: bold;
+}
+
+.nav-bar2 ul{ 
+	 display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 2px 0;
+  background-color: #D9D9D9;
+ }
+
+.programs {
+  background-color: white;
+  padding: 20px 40px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.program-header{
+	 display: flex;
+  align-items: center;
+}
+
+.titre{
+	font-size: 40px;
+}
+.program-tabs button {
+  background-color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 20px;
+  color:#999999;
+
+}
+
+.program-list { 
+	margin-left:130px;
+	color: #002D72;
+
+ }
+
+.info-cards {
+  display: flex;
+  gap:20px;
+  padding: 12px;
+  font-weight: bold;
+
+  margin-left: 150px;}
+
+.key { 
+background-color: #FFDC00;
+margin: 0;
+padding: 25px;
+text-align: center;
+}
+
+.primary {
+	background-color:  #00a3ad;
+	margin-left: 350px;
+	margin-right: 400px;
+	padding: 20px 30px;
+	color: white;
+	align-content: center;
+	background-size: 20px 40px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	
+}
+
+.secondary {
+	background-color: #D9D9D9;
+	margin-left: 350px;
+	margin-right: 400px;
+	padding: 20px 30px;
+	color: black;
+	align-content: center;
+	background-size: 20px 40px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+
+}
+.events { 
+background-color: #FFC609;
+margin-left: 400px;
+margin-right: 450px;
+margin-top: 60px;
+margin-bottom: 250Px;
+padding: 30px;
+
+}
+
+.item1{ 
+background-color:#D9D9D9;
+padding: 5px 5px; 
+margin: 5px;
+}
+
+.item2 {background-color:#D9D9D9;
+padding: 5px 5px;
+margin: 5px;
+}
+
+.item3 {background-color:#D9D9D9;
+padding: 5px 5px;
+margin: 5px;
+}
+
+.item4 {background-color:#D9D9D9;
+padding: 5px 5px;
+margin: 5px;
+}
+
+.item5 {background-color:#D9D9D9;
+padding: 5px 5px;
+margin: 5px;
+}
+
+.footer { 
+
+	background-color: #002d72;
+	color: white;
+	
+  
+  padding: 40px 50px;
+
+ }
+ .program-description {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+}
+
+.program-description p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.program-description {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  margin-left: 130px;
+  color: #333;
+}
+
+.program-item {
+  color: #004C9B;
+  text-decoration: none;
+  display: block;
+  padding: 8px 0;
+}
+
+.program-item:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+.event-tooltip {
+    display: none;
+    background-color: white;
+    border: 2px solid #004C9B;
+    border-radius: 8px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.tooltip-content h3 {
+    color: #004C9B;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.tooltip-content p {
+    color: #333;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.tooltip-content p strong {
+    color: #002D72;
+}
+
+
+
+
