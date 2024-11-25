@@ -1,0 +1,105 @@
+<style>
+
+header <h3> 
+
+body {
+    font-family: Imact, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    font-family: Arial; san-serif;
+    background-color: #004c9b;
+    padding: 30px;
+    text-align: left;
+    font-size: 35px;
+    color: white;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-family: 'Impact', sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+    margin: auto;
+    width: 100%;
+}
+
+h2 { 
+
+    color: black;
+    text-align: left;
+    font-family: 'Impact', sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    margin: auto;
+    width: 100%;
+}
+
+
+button {
+    display: inline-block;
+    border: 2px solid white;  
+    border-radius: 10px;       
+    padding: 25px;            
+    background-color: #ffdc00;
+    font-size: 16px;    
+    cursor: pointer;         
+    margin: 10px;       
+    float: center;
+    position: relative;
+}
+
+button:hover {
+    background-color: #e6c200;
+}
+
+
+h3 {
+    font-family: 'Impact', sans-serif;
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    font-family: 'Impact', sans-serif;
+    font-weight: 500;
+    margin: auto;
+    width: 100%;
+}
+
+
+p {
+    font-family: Arial; san-serif;
+    padding: 30px;
+    text-align: left;
+    font-size: 20px;
+    float: right;
+
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+
+}
+
+td, th {
+  border: 50px solid #dddddd;
+  font-size:25px;
+  text-align: center;
+  padding: 70px;
+  border-color: #004c9b;
+  border-width: 100%;
+}
+
+img {
+
+    float: centered;
+}
+
+
+</style>
