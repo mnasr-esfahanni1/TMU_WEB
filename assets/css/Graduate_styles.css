@@ -11,6 +11,128 @@ body {
   background-color: #f8f8f8;
 }
 
+*{
+  font-family: "Roboto", sans-serif;
+ 
+}
+header {
+  height: 11vh;
+  width: 100vw;
+  background-color: #004AAD;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo styling */
+#logo {
+  background-image: url(../images/brand-toolkit-1.png);
+  width: 15vw;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Menu container */
+#menu {
+  display: flex;
+  width: 55vw;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  margin-left: 1vw;
+  position: relative;
+}
+
+
+.menu-item {
+  position: relative;
+}
+
+#menu a {
+  font-size: 20px;
+  color: #FEDC01;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#menu a:hover {
+  color: #FFFFFF;
+}
+
+
+.dropdown {
+  display: none; 
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  background-color: #004AAD;
+  padding: 10px 0;
+  border-radius: 5px;
+  list-style: none;
+  width: 200px;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown li {
+  padding: 5px 15px;
+}
+
+.dropdown li a {
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.dropdown li a:hover {
+  color: #FFFFFF;
+  background-color: #003377;
+  border-radius: 3px;
+}
+
+
+.menu-item:hover .dropdown {
+  display: block;
+}
+
+
+#search {
+  height: 51px;
+  width: 16vw;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin-right: 5vw;
+}
+
+#search h2 {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  color: #004AAD;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Utility styles */
+a, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: #FFFFFF;
+  text-decoration: none;
+}
 
 
 .header-top {
@@ -271,3 +393,95 @@ margin: 5px;
 
 
 
+#footer {
+  background-color: #004aad; /* Main blue color */
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+  flex-wrap: wrap;
+}
+
+/* Footer Info */
+.footer-info h4,
+.footer-social h4 {
+  margin-bottom: 10px;
+}
+
+.footer-info address,
+.footer-info nav {
+  line-height: 1.6;
+}
+
+.footer-info nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-info nav a:hover {
+  text-decoration: underline;
+}
+
+/* Social Icons */
+.footer-social .social-icons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.social-icon {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  color: #fedc01; /* Yellow hover */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  background-color: #003377; /* Darker blue */
+  text-align: center;
+  padding: 10px 5%;
+}
+
+.footer-bottom nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-bottom nav a:hover {
+  text-decoration: underline;
+}
+
+/* Scroll-to-Top Button */
+#scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #004aad;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+#scrollToTop:hover {
+  background-color: #fedc01;
+  color: #004aad;
+}
