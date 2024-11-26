@@ -51,7 +51,7 @@ header {
 }
 
 #menu a {
-  font-size: 20px;
+  font-size: 18px;
   color: #FEDC01;
   padding: 10px 20px;
   text-decoration: none;
@@ -133,6 +133,7 @@ a:hover, a:active {
   color: #FFFFFF;
   text-decoration: none;
 }
+
 
 
 .header-top {
