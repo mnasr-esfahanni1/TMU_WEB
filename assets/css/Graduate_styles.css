@@ -283,6 +283,11 @@ text-align: center;
 	font-weight: bold;
 
 }
+.program-list li a:hover {
+  color:inherit !important;
+  text-decoration: none !important;
+
+}
 .events { 
 background-color: #FFC609;
 margin-left: 400px;
