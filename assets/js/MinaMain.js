@@ -103,3 +103,21 @@ listItems.forEach(item => {
         item.style.backgroundColor = '#f4f4f4'; // Reset background color
     });
 });
+
+const steps = document.querySelectorAll('.step');
+
+// Add event listeners for hover effects
+steps.forEach(step => {
+    step.addEventListener('mouseover', () => {
+        step.style.transform = 'scale(1.1)'; // Slightly increase size of the box
+        step.style.backgroundColor = '#004AAD'; // Change box background color
+        step.style.color = '#FEDC01'; // Change text color
+        step.style.transition = 'all 0.3s ease'; // Smooth transition
+    });
+
+    step.addEventListener('mouseout', () => {
+        step.style.transform = 'scale(1)'; // Reset box size
+        step.style.backgroundColor = '#f4f4f4'; // Reset box background color
+        step.style.color = '#000000'; // Reset text color
+    });
+});

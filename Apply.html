@@ -11,25 +11,61 @@
 <script src="https://kit.fontawesome.com/ab8a8a2ce4.js" crossorigin="anonymous"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="TMUApply_RYoung.css">
+  <link rel="stylesheet" href="assets/css/Apply.css">
 </head>
 <body>
-   <img src="assets/images/tmulogo.png" alt="Logo" style=" left: none; width: 100px; border: white; ">
-  <header>
-    <h1>How to Apply</h1>
-    <nav>
-      <ul>
-        <li><button>Home</button></li>
-        <li><button>Tuition and Fees</button></li>
-        <li><button>Financial Assistance</button></li>
-        <li><button>my.torontomu</button></li>
-      </ul>
+   <header>
+    <a href="index.html" id="logo"></a>
+    <nav id="menu">
+      <div class="menu-item">
+        <a href="Graduate.html">Graduate Programs</a>
+        <ul class="dropdown">
+          <li><a href="Graduate.html">Program A</a></li>
+          <li><a href="Graduate.html">Program B</a></li>
+          <li><a href="Graduate.html">Program C</a></li>
+        </ul>
+      </div>
+      <div class="menu-item">
+        <a href="Admission.html">Admissions</a>
+        <ul class="dropdown">
+          <li><a href="Admission.html">Undergraduate</a></li>
+          <li><a href="Admission.html">Graduate</a></li>
+          <li><a href="Admission.html">International</a></li>
+        </ul>
+      </div>
+      <div class="menu-item">
+        <a href="Dining.html">Business Services</a>
+        <ul class="dropdown">
+          <li><a href="Dining.html">Dining</a></li>
+          <li><a href="Dining.html">Shops</a></li>
+          <li><a href="Dining.html">Facilities</a></li>
+        </ul>
+      </div>
+      <div class="menu-item">
+        <a href="Tution.html">Tuiton</a>
+        <ul class="dropdown">
+          <li><a href="Tution.html">Domestic</a></li>
+          <li><a href="Tution.html">Out-of-Province</a></li>
+          <li><a href="Tution.html">International</a></li>
+        </ul>
+      </div>
+      <div class="menu-item">
+        <a href="Apply.html">Apply</a>
+        <ul class="dropdown">
+          <li><a href="Apply.html">How to Apply</a></li>
+        </ul>
+      </div>
     </nav>
+
+
+    <div id="search">
+      <h2>Search Sites and People</h2>
+    </div>
   </header>
 
   <main>
   
-    <section class="steps">
+    <section id="steps">
       <div class="step">
         <h3>Step 1: Research Your Program</h3>
       </div>
@@ -43,11 +79,49 @@
         <h3>Step 4: Submit Supporting Documents</h3>
       </div>
     </section>
+    <section id="banner">
+      
+    </section>
+
   </main>
   <div class="banner"></div>
- <footer>
-  <img src="assets/images/Footer.png" alt="footer" style="float: none; width: 1500px;">
-  </footer>
+
+  <footer id="footer">
+    <div class="footer-container">
+      <div class="footer-info">
+        <h4>Toronto Metropolitan University</h4>
+        <address>
+          350 Victoria Street<br />
+          Toronto, ON M5B 2K3<br />
+          P: <a href="tel:416-979-5000">416-979-5000</a>
+        </address>
+        <nav>
+          <a href="#">Directory</a> / <a href="#">Maps and Directions</a>
+        </nav>
+      </div>
   
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+        <nav>
+          <a href="#">Careers</a> / <a href="#">Media Room</a>
+        </nav>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <nav>
+        <a href="#">Privacy Policy</a> / <a href="#">Accessibility</a> /
+        <a href="#">Terms & Conditions</a>
+      </nav>
+    </div>
+    <button id="scrollToTop" title="Scroll to Top">▲</button>
+  </footer>
+<script src="assets/js/MinaMain.js"></script>
 </body>
 </html>
