@@ -100,27 +100,43 @@ main{
     justify-content: space-between;
     justify-self: end;
 }
-.links{
+.links {
     width: 30%;
     height: 100%;
     background-color: #004AAD;
-    opacity: 0.75;
-    background-repeat: no-repeat;
-    background-size: 10vw;
-    background-position: center;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
-#porgram{
-    background-image: url(../images/program.png);
 
+.links i {
+    font-size: 150px; 
+    color: #FEDC01;
+    transition: all 0.3s ease;
 }
-#Inter_app{
-    background-image: url(../images/Inter_app.png);
-    background-size: 7vw;
+
+.links span {
+    display: none; 
+    color: #FEDC01;
+    font-size: 26px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5;
+    position: absolute;
+    opacity: 1;
 }
-#Continuing_Education{
-    background-image: url(../images/Continuing_Education.svg);
-    background-size: 7vw;
+
+.links:hover i {
+    display: none; 
 }
+
+.links:hover span {
+    display: block; 
+}
+
 
 
 #Hero_Name{
@@ -144,6 +160,7 @@ main{
     font-size: 22px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
+    transition: all 0.3s ease; 
 }
 /* ************************ footer ********************** */
 footer{
