@@ -1,3 +1,34 @@
+
+
+const menuItems = document.querySelectorAll(".menu-item");
+
+menuItems.forEach(item => {
+  item.addEventListener("click", () => {
+    
+    const dropdown = item.querySelector(".dropdown");
+    if (dropdown.style.display === "block") {
+      dropdown.style.display = "none";
+    } else {
+   
+      document.querySelectorAll(".dropdown").forEach(dd => {
+        dd.style.display = "none";
+      });
+      dropdown.style.display = "block";
+    }
+  });
+});
+
+
+document.addEventListener("click", e => {
+  if (!e.target.closest(".menu-item")) {
+    document.querySelectorAll(".dropdown").forEach(dd => {
+      dd.style.display = "none";
+    });
+  }
+});
+
+
+
 const links = document.querySelectorAll('.linksOfName');
 
 
@@ -35,4 +66,24 @@ link1.forEach(link => {
 
     // Append the description span to the link element
     link.appendChild(span);
+});
+
+
+
+
+const scrollToTopButton = document.getElementById("scrollToTop");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    scrollToTopButton.style.display = "flex";
+  } else {
+    scrollToTopButton.style.display = "none";
+  }
+});
+
+scrollToTopButton.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 });

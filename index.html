@@ -10,27 +10,52 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/ab8a8a2ce4.js" crossorigin="anonymous"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
 
     <title>TMU</title>
 </head>
 <body>
     <header>
-        <a href="index.html" id="logo">
-    
-
-        </a>
-        <nav>
+        <a href="index.html" id="logo"></a>
+        <nav id="menu">
+          <div class="menu-item">
             <a href="Graduate.html">Graduate Programs</a>
+            <ul class="dropdown">
+              <li><a href="#">Program A</a></li>
+              <li><a href="#">Program B</a></li>
+              <li><a href="#">Program C</a></li>
+            </ul>
+          </div>
+          <div class="menu-item">
             <a href="Admission.html">Admissions</a>
+            <ul class="dropdown">
+              <li><a href="#">Undergraduate</a></li>
+              <li><a href="#">Graduate</a></li>
+              <li><a href="#">International</a></li>
+            </ul>
+          </div>
+          <div class="menu-item">
             <a href="Dining.html">Business Services</a>
-            <!-- <a href="#">Campus Life</a> -->
+            <ul class="dropdown">
+              <li><a href="#">Dining</a></li>
+              <li><a href="#">Shops</a></li>
+              <li><a href="#">Facilities</a></li>
+            </ul>
+          </div>
+          <div class="menu-item">
             <a href="#">Apply</a>
+            <ul class="dropdown">
+              <li><a href="#">Online</a></li>
+              <li><a href="#">In Person</a></li>
+              <li><a href="#">By Mail</a></li>
+            </ul>
+          </div>
         </nav>
         <div id="search">
-            <h2>Search Sites and People</h2>
+          <h2>Search Sites and People</h2>
         </div>
-
-    </header>
+      </header>
     <main>
         <section id="hero_image">
             <h1 id="header_Text"> Discover what it means<br/>to be metropolitan</h1>
@@ -50,10 +75,46 @@
 
         </section>
     </main>
-    <footer>
+    <!-- <section id="lastsection">
         <h1 id="Footer_Text"> Start your future at TMU</h1>
+    </section> -->
 
-    </footer>
+    <footer id="footer">
+        <div class="footer-container">
+          <div class="footer-info">
+            <h4>Toronto Metropolitan University</h4>
+            <address>
+              350 Victoria Street<br />
+              Toronto, ON M5B 2K3<br />
+              P: <a href="tel:416-979-5000">416-979-5000</a>
+            </address>
+            <nav>
+              <a href="#">Directory</a> / <a href="#">Maps and Directions</a>
+            </nav>
+          </div>
+      
+          <div class="footer-social">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <nav>
+              <a href="#">Careers</a> / <a href="#">Media Room</a>
+            </nav>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <nav>
+            <a href="#">Privacy Policy</a> / <a href="#">Accessibility</a> /
+            <a href="#">Terms & Conditions</a>
+          </nav>
+        </div>
+        <button id="scrollToTop" title="Scroll to Top">▲</button>
+      </footer>
     <script src="assets/js/MinaMain.js"></script>
 </body>
 </html>
