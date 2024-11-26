@@ -87,3 +87,19 @@ scrollToTopButton.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+
+const listItems = document.querySelectorAll('#programholder ul li');
+
+// Loop through each list item and add event listeners
+listItems.forEach(item => {
+    item.addEventListener('mouseover', () => {
+        item.style.transform = 'scale(1.1)'; // Slightly increase the size
+        item.style.backgroundColor = '#FEDC01'; // Change background color
+    });
+
+    item.addEventListener('mouseout', () => {
+        item.style.transform = 'scale(1)'; // Reset size
+        item.style.backgroundColor = '#f4f4f4'; // Reset background color
+    });
+});
